@@ -25,12 +25,12 @@ Triplet Extraction via Iterative Weak Supervision".
 `conda create --name <env> --file requirements.txt`
 
 - Click the link to download the base model:
-`https://drive.google.com/file/d/11IqXcfXR501RSJIXoFCiBy9EhXsboohG/view?usp=share_link`
-
-Unzip `drcd_qa.zip` and put it in `model/`.
+`https://drive.google.com/file/d/11IqXcfXR501RSJIXoFCiBy9EhXsboohG/view?usp=share_link`   
+  Unzip `drcd_qa.zip` and put it in `model/`.
 
 - Train the ASTE model:
 `bash train.sh`
 
-- Inference (please train the model first and note your path for output model):
-`bash inference.sh`
+- Inference:
+`bash inference.sh`   
+  Please train the model first and note your path for output model.
