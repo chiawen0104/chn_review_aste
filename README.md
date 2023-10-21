@@ -14,10 +14,11 @@ Triplet Extraction via Iterative Weak Supervision".
 
 ## Data Information
 |Dataset|Size|Source Model|Annotator|
-|train||||
-|valid||||
-|test||||
-|test||||
+|-------|----|------------|---------|
+|train|64007|Self-train-C||
+|valid|5000|Rule-Based System||
+|test|5000|Union of models|ChatGPT|
+|test_gold300|300|Union of models|Labeling worker|
 
 
 ### Usage
@@ -28,7 +29,7 @@ Triplet Extraction via Iterative Weak Supervision".
 `https://drive.google.com/file/d/11IqXcfXR501RSJIXoFCiBy9EhXsboohG/view?usp=share_link`   
   Unzip `drcd_qa.zip` and put it in `model/`.
 
-- Train the ASTE model:
+- Train the mT5 ASTE model:
 `bash train.sh`
 
 - Inference:
