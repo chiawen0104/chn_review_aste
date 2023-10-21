@@ -12,9 +12,22 @@ Triplet Extraction via Iterative Weak Supervision".
 - `src/mt5_aste.py`: python codes of ASTE model.
 
 
+## Data Information
+|Dataset|Size|Source Model|Annotator|
+|train||||
+|valid||||
+|test||||
+|test||||
+
+
 ### Usage
 - Create conda env:
 `conda create --name <env> --file requirements.txt`
+
+- Click the link to download the base model:
+`https://drive.google.com/file/d/11IqXcfXR501RSJIXoFCiBy9EhXsboohG/view?usp=share_link`
+
+Unzip `drcd_qa.zip` and put it in `model/`.
 
 - Train the ASTE model:
 `bash train.sh`
