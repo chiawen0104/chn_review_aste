@@ -1,8 +1,7 @@
 # Chinese ASTE Dataset
 Our dataset serves as an accessible resource for conducting Aspect Sentiment Triplet Extraction (ASTE) on Chinese restaurant reviews from Google Maps.
 
-For further information, please refer to our paper titled "Automatic Construction of a Chinese Review Dataset for Aspect Sentiment
-Triplet Extraction via Iterative Weak Supervision".
+For further information, please refer to our publication, "Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision," in LREC-COLING 2024.
 
 
 ## File Structure
