@@ -24,8 +24,8 @@ For further information, please refer to our publication, "Automatic Constructio
 - Create conda env:
 `conda create --name <env> --file requirements.txt`
 
-- Click the link to download the base model: ([link](https://drive.google.com/file/d/11IqXcfXR501RSJIXoFCiBy9EhXsboohG/view?usp=share_link))  
-  Unzip `drcd_qa.zip` and put it in `model/`.
+- Click the link to download the base model ([link](https://drive.google.com/file/d/11IqXcfXR501RSJIXoFCiBy9EhXsboohG/view?usp=share_link)):  
+  Unzip `drcd_qa.zip` and put it in `model/`
 
 - Train the mT5 ASTE model:
 `bash train.sh`
