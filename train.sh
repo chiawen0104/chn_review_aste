@@ -1,12 +1,12 @@
 python ./src/mt5_aste.py \
-    --model_name_or_path model/drcd_qa \
+    --model_name_or_path ./models/drcd_qa \
     --do_train \
     --do_eval \
     --do_predict \
     --train_file ./data/train/train.json \
     --validation_file ./data/valid/valid.json \
     --test_file ./data/test/test.json \
-    --output_dir aste_model \
+    --output_dir ./models/aste_model \
     --per_device_train_batch_size=2 \
     --per_device_eval_batch_size=2 \
     --overwrite_output_dir \

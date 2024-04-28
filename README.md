@@ -22,26 +22,22 @@ For further information, please refer to our publication, "Automatic Constructio
 
 ## Model Usage
 Use our dataset to conduct Aspect Sentiment Triplet Extraction (ASTE). Note that please train the model before inference and chcck your directory path.
-1. Create conda env:
-`conda create --name <env> --file requirements.txt`
+1. Install packages:
+  ```
+  pip3 intall -r requirements.txt
+  ```
 
 2. Download the pretrained model from huggingface (https://huggingface.co/chiawen0104/mt5-drcd-qa):
   ```
-  pip3 install huggingface-hub
-  ```
-  ```
-  from huggingface_hub import snapshot_download
-  model_id = "chiawen0104/mt5-drcd-qa" # hugginFace's model name
-  snapshot_download(
-    repo_id=model_id,
-    local_dir=<your_dir_name>,
-    local_dir_use_symlinks=False,
-    revision="main"
-  )
+  python3 download.py
   ```
 
 3. Train the mT5 ASTE model:
-`bash train.sh`
+  ```bash
+  bash train.sh
+  ```
 
 4. Inference:
-`bash inference.sh`
+  ```bash
+  bash inference.sh
+  ```

@@ -1,9 +1,9 @@
 python ./src/mt5_aste.py \
-    --model_name_or_path ./aste_model \
+    --model_name_or_path ./models/aste_model \
     --do_predict \
     --validation_file ./data/valid/valid.json \
     --test_file ./data/test/test.json \
-    --output_dir ./aste_model/infer \
+    --output_dir ./models/aste_model/infer \
     --per_device_eval_batch_size=2 \
     --overwrite_output_dir \
     --predict_with_generate \
