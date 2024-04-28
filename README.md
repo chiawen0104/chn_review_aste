@@ -1,7 +1,7 @@
 # Chinese ASTE Dataset
 Our dataset serves as an accessible resource for conducting Aspect Sentiment Triplet Extraction (ASTE) on Chinese restaurant reviews from Google Maps.
 
-For further information, please refer to our publication, "Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision," in LREC-COLING 2024.
+For further information, please refer to our publication, "Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision" in LREC-COLING 2024.
 
 
 ## File Structure
@@ -12,24 +12,36 @@ For further information, please refer to our publication, "Automatic Constructio
 
 
 ## Data Information
-|Dataset|Size|Source Model|Annotator|
+|Dataset|Size|Source Model|Golden Answer|
 |-------|----|------------|---------|
-|train|64007|Self-train-C||
-|valid|5000|Rule-Based System||
+|train|64007|Self-train-C|None|
+|valid|5000|Rule-Based System|None|
 |test|5000|Union of models|ChatGPT|
 |test_gold300|300|Union of models|Labeling worker|
 
 
-## Usage
-- Create conda env:
+## Model Usage
+Use our dataset to conduct Aspect Sentiment Triplet Extraction (ASTE). Note that please train the model before inference and chcck your directory path.
+1. Create conda env:
 `conda create --name <env> --file requirements.txt`
 
-- Click the link to download the base model ([link](https://drive.google.com/file/d/11IqXcfXR501RSJIXoFCiBy9EhXsboohG/view?usp=share_link)):  
-  Unzip `drcd_qa.zip` and put it in `model/`
+2. Download the pretrained model from huggingface (https://huggingface.co/chiawen0104/mt5-drcd-qa):
+  ```
+  pip3 install huggingface-hub
+  ```
+  ```
+  from huggingface_hub import snapshot_download
+  model_id = "chiawen0104/mt5-drcd-qa" # hugginFace's model name
+  snapshot_download(
+    repo_id=model_id,
+    local_dir=<your_dir_name>,
+    local_dir_use_symlinks=False,
+    revision="main"
+  )
+  ```
 
-- Train the mT5 ASTE model:
+3. Train the mT5 ASTE model:
 `bash train.sh`
 
-- Inference:
-`bash inference.sh`   
-  Please train the model before inference and note your path for the model.
+4. Inference:
+`bash inference.sh`
