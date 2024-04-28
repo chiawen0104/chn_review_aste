@@ -1,5 +1,5 @@
 # Chinese ASTE Dataset
-Our dataset serves as an accessible resource for conducting Aspect Sentiment Triplet Extraction (ASTE) on Chinese restaurant reviews from Google Maps.
+Our dataset serves as an accessible resource for Aspect Sentiment Triplet Extraction (ASTE) on Chinese restaurant reviews from Google Maps.
 
 For further information, please refer to our publication, "Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision" in LREC-COLING 2024.
 
@@ -12,11 +12,11 @@ For further information, please refer to our publication, "Automatic Constructio
 
 
 ## Data Information
-|Dataset|Size|Source Model|Golden Answer|
+|Dataset|Size|Source Model|Golden Answer Provider|
 |-------|----|------------|---------|
 |train|64007|Self-train-C|None|
 |valid|5000|Rule-Based System|None|
-|test|5000|Union of models|ChatGPT|
+|test|5000|Union of models|gpt-3.5-turbo|
 |test_gold300|300|Union of models|Labeling worker|
 
 
@@ -34,7 +34,7 @@ pip3 install --pre torch torchvision torchaudio --extra-index-url https://downlo
 ```
 
 ### Download the base model
-Download `mt5-drcd-qa` from huggingface (https://huggingface.co/chiawen0104/mt5-drcd-qa):
+Download `mt5-drcd-qa` from huggingface (https://huggingface.co/chiawen0104/mt5-drcd-qa)
 ```
 python3 download.py
 ```
