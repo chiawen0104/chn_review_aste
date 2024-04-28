@@ -7,7 +7,7 @@ python ./src/mt5_aste.py \
     --per_device_eval_batch_size=2 \
     --overwrite_output_dir \
     --predict_with_generate \
-    --max_predict_samples 100000 \
+    --max_predict_samples 10000 \
     --max_source_length 1024 \
     --max_target_length 512 \
     --text_column question \

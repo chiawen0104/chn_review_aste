@@ -21,23 +21,32 @@ For further information, please refer to our publication, "Automatic Constructio
 
 
 ## Model Usage
-Use our dataset to conduct Aspect Sentiment Triplet Extraction (ASTE). Note that please train the model before inference and chcck your directory path.
-1. Install packages:
-  ```
-  pip3 intall -r requirements.txt
-  ```
+Use our dataset to conduct Aspect Sentiment Triplet Extraction (ASTE). 
 
-2. Download the pretrained model from huggingface (https://huggingface.co/chiawen0104/mt5-drcd-qa):
-  ```
-  python3 download.py
-  ```
+### Install packages
+- Install Python dependencies
+```
+pip3 intall -r requirements.txt
+```
+- Additionally, Mac users can install this package to accelerated PyTorch training ([ref](https://developer.apple.com/metal/pytorch/))
+```
+pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
+```
 
-3. Train the mT5 ASTE model:
-  ```bash
-  bash train.sh
-  ```
+### Download the base model
+Download `mt5-drcd-qa` from huggingface (https://huggingface.co/chiawen0104/mt5-drcd-qa):
+```
+python3 download.py
+```
 
-4. Inference:
-  ```bash
-  bash inference.sh
-  ```
+### Train
+Train the mT5 ASTE model
+```bash
+bash train.sh
+```
+
+### Inference
+Note that please train the model before inference and check your directory path.
+```bash
+bash inference.sh
+```

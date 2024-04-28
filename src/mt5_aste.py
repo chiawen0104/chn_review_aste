@@ -602,12 +602,20 @@ def main():
             else:
                 union.append(p)
 
-        accuracy = correct / len(union)
+        if len(union) > 0:
+            accuracy = correct / len(union)
+        else:
+            accuracy = 0
+
         if len(pred) > 0: 
             precision = correct / len(pred)
         else: 
             precision = 0
-        recall = correct / len(true)
+
+        if len(true) > 0:
+            recall = correct / len(true)
+        else:
+            recall = 0
 
         if (precision + recall) > 0:
             f1 = 2 * (precision * recall) / (precision + recall)
