@@ -1,7 +1,8 @@
 # Chinese ASTE Dataset
 Our dataset serves as an accessible resource for Aspect Sentiment Triplet Extraction (ASTE) on Chinese restaurant reviews from Google Maps.
 
-For further information, please refer to our publication, "Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision" in LREC-COLING 2024.
+For further information, please refer to our publication:  
+[Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision (LREC-COLING 2024)](https://aclanthology.org/2024.lrec-main.167/)
 
 
 ## File Structure
@@ -49,4 +50,9 @@ bash train.sh
 Note that please train the model before inference and check your directory path.
 ```bash
 bash inference.sh
+```
+
+## Citation
+```
+Chia-Wen Lu, Ching-Wen Yang, and Wei-Yun Ma. 2024. Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 1871–1882, Torino, Italia. ELRA and ICCL.
 ```
