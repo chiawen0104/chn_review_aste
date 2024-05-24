@@ -2,7 +2,7 @@
 Our dataset serves as an accessible resource for Aspect Sentiment Triplet Extraction (ASTE) on Chinese restaurant reviews from Google Maps.
 
 For further information, please refer to our publication:  
-[Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision (LREC-COLING 2024)](https://aclanthology.org/2024.lrec-main.167/)
+[Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision](https://aclanthology.org/2024.lrec-main.167/)
 
 
 ## File Structure
@@ -54,5 +54,24 @@ bash inference.sh
 
 ## Citation
 ```
-Chia-Wen Lu, Ching-Wen Yang, and Wei-Yun Ma. 2024. Automatic Construction of a Chinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision. In Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024), pages 1871–1882, Torino, Italia. ELRA and ICCL.
+@inproceedings{lu-etal-2024-automatic-construction,
+    title = "Automatic Construction of a {C}hinese Review Dataset for Aspect Sentiment Triplet Extraction via Iterative Weak Supervision",
+    author = "Lu, Chia-Wen  and
+      Yang, Ching-Wen  and
+      Ma, Wei-Yun",
+    editor = "Calzolari, Nicoletta  and
+      Kan, Min-Yen  and
+      Hoste, Veronique  and
+      Lenci, Alessandro  and
+      Sakti, Sakriani  and
+      Xue, Nianwen",
+    booktitle = "Proceedings of the 2024 Joint International Conference on Computational Linguistics, Language Resources and Evaluation (LREC-COLING 2024)",
+    month = may,
+    year = "2024",
+    address = "Torino, Italia",
+    publisher = "ELRA and ICCL",
+    url = "https://aclanthology.org/2024.lrec-main.167",
+    pages = "1871--1882",
+    abstract = "Aspect Sentiment Triplet Extraction (ASTE), introduced in 2020, is a task that involves the extraction of three key elements: target aspects, descriptive opinion spans, and their corresponding sentiment polarity. This process, however, faces a significant hurdle, particularly when applied to Chinese languages, due to the lack of sufficient datasets for model training, largely attributable to the arduous manual labeling process. To address this issue, we present an innovative framework that facilitates the automatic construction of ASTE via Iterative Weak Supervision, negating the need for manual labeling, aided by a discriminator to weed out subpar samples. The objective is to successively improve the quality of this raw data and generate supplementary data. The effectiveness of our approach is underscored by our results, which include the creation of a substantial Chinese review dataset. This dataset encompasses over 60,000 Google restaurant reviews in Chinese and features more than 200,000 extracted triplets. Moreover, we have also established a robust baseline model by leveraging a novel method of weak supervision. Both our dataset and model are openly accessible to the public.",
+}
 ```
