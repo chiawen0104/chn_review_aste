@@ -29,7 +29,7 @@ Use our dataset to conduct Aspect Sentiment Triplet Extraction (ASTE).
 ```
 pip3 intall -r requirements.txt
 ```
-- Additionally, Mac users can install this package to accelerated PyTorch training ([ref](https://developer.apple.com/metal/pytorch/))
+- Additionally, Mac users can install this package to accelerate PyTorch training ([ref](https://developer.apple.com/metal/pytorch/))
 ```
 pip3 install --pre torch torchvision torchaudio --extra-index-url https://download.pytorch.org/whl/nightly/cpu
 ```
